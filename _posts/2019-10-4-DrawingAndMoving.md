@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drawing and moving a sprite
-categories: Project Pico8 C# Programming
+categories: Project Pico8 Programming
 ---
 first, you set the variables of where you want your character to spawn
 
