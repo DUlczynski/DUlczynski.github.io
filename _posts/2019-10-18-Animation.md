@@ -63,4 +63,5 @@ if w then -- if w is true
 walking() --call the function
 else
 s=1 -- if not, sprite is set to the non walking sprite
-end```
+end
+```
