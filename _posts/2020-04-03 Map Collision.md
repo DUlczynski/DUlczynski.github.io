@@ -16,13 +16,15 @@ function hit(x,y,w,h)
          (fget(mget(i/8,(y+h)/8))==1) then
           collide=true
     end
-  end```
+  end
+  ```
   This only checks for a y-direction
   
   
   Then doing the same thing for the x-direction you do
   
-  ```for i=y,y+h,h do
+  ```lua
+  for i=y,y+h,h do
     if (fget(mget(x/8,i/8))==1) or
          (fget(mget((x+w)/8,i/8))==1) then
           collide=true
@@ -30,7 +32,8 @@ function hit(x,y,w,h)
   end
   
   return collide
-end```
+end
+```
 
 The collide is what we really need and checks if we have actually it, in each of our directional movement, we need to run the hit function, and if it hits it sets the position back 1, which therefore reverts it back to its previous position, like so.
 
@@ -44,6 +47,7 @@ self.y-=1
 self.cam_y-=1
 end
 w = true
-end```
+end
+```
 
 The camera is an addition I made to the code, in order to make a fluent camera system.
